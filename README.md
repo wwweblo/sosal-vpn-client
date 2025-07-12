@@ -15,24 +15,9 @@
 
 `sslocal` — это исполняемый файл клиента Shadowsocks.
 
-- Для Linux/macOS можно установить через менеджер пакетов или собрать из исходников shadowsocks-rust:
-
 ```bash
-# Пример для Ubuntu:
-sudo apt install shadowsocks-libev
-
-# Или собрать из исходников shadowsocks-rust
-git clone https://github.com/shadowsocks/shadowsocks-rust.git
-cd shadowsocks-rust
-cargo build --release
-# Выполняемый файл будет в target/release/sslocal
+cargo install shadowsocks-rust --bin sslocal 
 ```
-
-- Для Windows можно скачать готовые релизы с [https://github.com/shadowsocks/shadowsocks-rust/releases](https://github.com/shadowsocks/shadowsocks-rust/releases)
-
-- Важно, чтобы `sslocal` был доступен из командной строки (в PATH), либо нужно указывать полный путь к `sslocal` в коде.
-
----
 
 ## Как использовать
 
